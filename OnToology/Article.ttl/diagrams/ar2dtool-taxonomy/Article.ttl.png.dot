@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+	"schema:SocialMediaPosting" -> "schema:Article" [ label = "rdfs:subClassOf" ];
+	"schema:NewsArticle" -> "schema:Article" [ label = "rdfs:subClassOf" ];
+	"schema:Language" -> "schema:Intangible" [ label = "rdfs:subClassOf" ];
+	"schema:QualitativeValue" -> "schema:Enumeration" [ label = "rdfs:subClassOf" ];
+	"schema:Place" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+	"schema:TechArticle" -> "schema:Article" [ label = "rdfs:subClassOf" ];
+	"schema:Organization" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+	"schema:Article" -> "schema:CreativeWork" [ label = "rdfs:subClassOf" ];
+	"schema:Report" -> "schema:Article" [ label = "rdfs:subClassOf" ];
+	"schema:ImageObject" -> "schema:MediaObject" [ label = "rdfs:subClassOf" ];
+	"schema:PostalAddress" -> "schema:Place" [ label = "rdfs:subClassOf" ];
+	"schema:ScholarlyArticle" -> "schema:Article" [ label = "rdfs:subClassOf" ];
+	"schema:Person" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+
+}

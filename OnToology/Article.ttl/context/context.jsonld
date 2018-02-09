@@ -1,0 +1,76 @@
+{
+  "@context" : {
+    "QualitativeValue" : {
+      "@id" : "http://schema.org/QualitativeValue"
+    },
+    "SocialMediaPosting" : {
+      "@id" : "http://schema.org/SocialMediaPosting"
+    },
+    "Organization" : {
+      "@id" : "http://schema.org/Organization"
+    },
+    "Thing" : {
+      "@id" : "http://schema.org/Thing"
+    },
+    "ScholarlyArticle" : {
+      "@id" : "http://schema.org/ScholarlyArticle"
+    },
+    "domainIncludes" : {
+      "@id" : "http://schema.org/domainIncludes"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "MediaObject" : {
+      "@id" : "http://schema.org/MediaObject"
+    },
+    "TechArticle" : {
+      "@id" : "http://schema.org/TechArticle"
+    },
+    "Person" : {
+      "@id" : "http://schema.org/Person"
+    },
+    "Report" : {
+      "@id" : "http://schema.org/Report"
+    },
+    "ImageObject" : {
+      "@id" : "http://schema.org/ImageObject"
+    },
+    "Article" : {
+      "@id" : "http://schema.org/Article"
+    },
+    "rangeIncludes" : {
+      "@id" : "http://schema.org/rangeIncludes"
+    },
+    "CreativeWork" : {
+      "@id" : "http://schema.org/CreativeWork"
+    },
+    "PostalAddress" : {
+      "@id" : "http://schema.org/PostalAddress"
+    },
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "Language" : {
+      "@id" : "http://schema.org/Language"
+    },
+    "Enumeration" : {
+      "@id" : "http://schema.org/Enumeration"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Image" : {
+      "@id" : "http://purl.org/dc/dcmitype/Image"
+    },
+    "NewsArticle" : {
+      "@id" : "http://schema.org/NewsArticle"
+    },
+    "Intangible" : {
+      "@id" : "http://schema.org/Intangible"
+    }
+  }
+}

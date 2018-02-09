@@ -1,0 +1,286 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/dcmitype/Image
+<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/ImageObject> .
+# 
+# http://schema.org/Article
+<http://schema.org/Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Article> <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews> .
+<http://schema.org/Article> <http://www.w3.org/2000/01/rdf-schema#comment> "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.</p>\n\n<p>See also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html\">blog post</a>." .
+<http://schema.org/Article> <http://www.w3.org/2000/01/rdf-schema#label> "Article" .
+# 
+# http://schema.org/CreativeWork
+# 
+# http://schema.org/Enumeration
+<http://schema.org/Enumeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/ImageObject
+<http://schema.org/ImageObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/ImageObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/MediaObject> .
+<http://schema.org/MediaObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/ImageObject> <http://www.w3.org/2000/01/rdf-schema#comment> "An image file." .
+<http://schema.org/ImageObject> <http://www.w3.org/2000/01/rdf-schema#label> "ImageObject" .
+# 
+# http://schema.org/Intangible
+<http://schema.org/Intangible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Language
+<http://schema.org/Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Language> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Intangible> .
+<http://schema.org/Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in <a href=\"https://en.wikipedia.org/wiki/IETF_language_tag\">BCP 47</a> can be used via the <a class=\"localLink\" href=\"http://schema.org/alternateName\">alternateName</a> property. The Language type previously also covered programming languages such as Scheme and Lisp, which are now best represented using <a class=\"localLink\" href=\"http://schema.org/ComputerLanguage\">ComputerLanguage</a>." .
+<http://schema.org/Language> <http://www.w3.org/2000/01/rdf-schema#label> "Language" .
+# 
+# http://schema.org/MediaObject
+# 
+# http://schema.org/NewsArticle
+<http://schema.org/NewsArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Article> .
+<http://schema.org/NewsArticle> <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews> .
+<http://schema.org/NewsArticle> <http://purl.org/dc/terms/source> <https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP-draws> .
+<http://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news.</p>\n\n<p>A more detailed overview of <a href=\"/docs/news.html\">schema.org News markup</a> is also available." .
+<http://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#label> "NewsArticle" .
+# 
+# http://schema.org/Organization
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://schema.org/Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization such as a school, NGO, corporation, club, etc." .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://schema.org/Person> <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews> .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person (alive, dead, undead, or fictional)." .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities that have a somewhat fixed, physical extension." .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The mailing address." .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "PostalAddress" .
+# 
+# http://schema.org/QualitativeValue
+<http://schema.org/QualitativeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/QualitativeValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Enumeration> .
+<http://schema.org/QualitativeValue> <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass> .
+<http://schema.org/QualitativeValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'." .
+<http://schema.org/QualitativeValue> <http://www.w3.org/2000/01/rdf-schema#label> "QualitativeValue" .
+# 
+# http://schema.org/Report
+<http://schema.org/Report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Report> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Article> .
+<http://schema.org/Report> <http://www.w3.org/2000/01/rdf-schema#comment> "A Report generated by governmental or non-governmental organization." .
+<http://schema.org/Report> <http://www.w3.org/2000/01/rdf-schema#label> "Report" .
+# 
+# http://schema.org/ScholarlyArticle
+<http://schema.org/ScholarlyArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/ScholarlyArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Article> .
+<http://schema.org/ScholarlyArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "A scholarly article." .
+<http://schema.org/ScholarlyArticle> <http://www.w3.org/2000/01/rdf-schema#label> "ScholarlyArticle" .
+# 
+# http://schema.org/SocialMediaPosting
+<http://schema.org/SocialMediaPosting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/SocialMediaPosting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Article> .
+<http://schema.org/SocialMediaPosting> <http://www.w3.org/2000/01/rdf-schema#comment> "A post to a social media platform, including blog posts, tweets, Facebook posts, etc." .
+<http://schema.org/SocialMediaPosting> <http://www.w3.org/2000/01/rdf-schema#label> "SocialMediaPosting" .
+# 
+# http://schema.org/TechArticle
+<http://schema.org/TechArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/TechArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Article> .
+<http://schema.org/TechArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "A technical article - Example: How-to (task) topics, step-by-step, procedural troubleshooting, specifications, etc." .
+<http://schema.org/TechArticle> <http://www.w3.org/2000/01/rdf-schema#label> "TechArticle" .
+# 
+# http://schema.org/Thing
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is derived from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web that can be expressed in a variety of syntaxes, including RDFa and HTML5 Microdata. More information about GoodRelations can be found at <a href=\"http://purl.org/goodrelations/\">http://purl.org/goodrelations/</a>." .
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass> <http://www.w3.org/2000/01/rdf-schema#label> "GoodRelationsClass" .
+# 
+# http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms> <http://www.w3.org/2000/01/rdf-schema#comment> "This term <a href=\"http://blog.schema.org/2012/11/good-relations-and-schemaorg.html\">uses</a> terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at <a href=\"http://purl.org/goodrelations/\">http://purl.org/goodrelations/</a>." .
+<http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms> <http://www.w3.org/2000/01/rdf-schema#label> "GoodRelationsTerms" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://schema.org/about> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/about> <http://schema.org/rangeIncludes> <http://schema.org/Thing> .
+<http://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject matter of the content." .
+<http://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#label> "about" .
+# 
+<http://schema.org/addressCountry> <http://schema.org/domainIncludes> <http://schema.org/PostalAddress> .
+<http://schema.org/addressCountry> <http://schema.org/rangeIncludes> <http://schema.org/Country> .
+<http://schema.org/addressCountry> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/addressCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>." .
+<http://schema.org/addressCountry> <http://www.w3.org/2000/01/rdf-schema#label> "addressCountry" .
+# 
+<http://schema.org/addressLocality> <http://schema.org/domainIncludes> <http://schema.org/PostalAddress> .
+<http://schema.org/addressLocality> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#comment> "The locality. For example, Mountain View." .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#label> "addressLocality" .
+# 
+<http://schema.org/addressRegion> <http://schema.org/domainIncludes> <http://schema.org/PostalAddress> .
+<http://schema.org/addressRegion> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "The region. For example, CA." .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#label> "addressRegion" .
+# 
+<http://schema.org/articleBody> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/articleBody> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/articleBody> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual body of the article." .
+<http://schema.org/articleBody> <http://www.w3.org/2000/01/rdf-schema#label> "articleBody" .
+# 
+<http://schema.org/author> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/author> <http://schema.org/rangeIncludes> <http://schema.org/Organization> .
+<http://schema.org/author> <http://schema.org/rangeIncludes> <http://schema.org/Person> .
+<http://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#comment> "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably." .
+<http://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#label> "author" .
+# 
+<http://schema.org/caption> <http://schema.org/domainIncludes> <http://schema.org/ImageObject> .
+<http://schema.org/caption> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/caption> <http://www.w3.org/2000/01/rdf-schema#comment> "The caption for this object." .
+<http://schema.org/caption> <http://www.w3.org/2000/01/rdf-schema#label> "caption" .
+# 
+<http://schema.org/contentLocation> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/contentLocation> <http://schema.org/rangeIncludes> <http://schema.org/Place> .
+<http://schema.org/contentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The location depicted or described in the content. For example, the location in a photograph or painting." .
+<http://schema.org/contentLocation> <http://www.w3.org/2000/01/rdf-schema#label> "contentLocation" .
+# 
+<http://schema.org/contributor> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/contributor> <http://schema.org/rangeIncludes> <http://schema.org/Organization> .
+<http://schema.org/contributor> <http://schema.org/rangeIncludes> <http://schema.org/Person> .
+<http://schema.org/contributor> <http://www.w3.org/2000/01/rdf-schema#comment> "A secondary contributor to the Article." .
+<http://schema.org/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "contributor" .
+# 
+<http://schema.org/datePublished> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/datePublished> <http://schema.org/rangeIncludes> <http://schema.org/Date> .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of first broadcast/publication." .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#label> "datePublished" .
+# 
+<http://schema.org/description> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/description> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the item." .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+# 
+<http://schema.org/headline> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/headline> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/headline> <http://www.w3.org/2000/01/rdf-schema#comment> "Headline of the article." .
+<http://schema.org/headline> <http://www.w3.org/2000/01/rdf-schema#label> "headline" .
+# 
+<http://schema.org/height> <http://schema.org/domainIncludes> <http://schema.org/ImageObject> .
+<http://schema.org/height> <http://schema.org/rangeIncludes> <http://schema.org/QuantitativeValue> .
+<http://schema.org/height> <http://www.w3.org/2000/01/rdf-schema#comment> "The height of the item." .
+<http://schema.org/height> <http://www.w3.org/2000/01/rdf-schema#label> "height" .
+# 
+<http://schema.org/image> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/image> <http://schema.org/rangeIncludes> <http://schema.org/ImageObject> .
+<http://schema.org/image> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#comment> "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>." .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#label> "image" .
+# 
+<http://schema.org/inLanguage> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/inLanguage> <http://schema.org/rangeIncludes> <http://schema.org/Language> .
+<http://schema.org/inLanguage> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/inLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>." .
+<http://schema.org/inLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "inLanguage" .
+# 
+<http://schema.org/name> <http://schema.org/domainIncludes> <http://schema.org/Organization> .
+<http://schema.org/name> <http://schema.org/domainIncludes> <http://schema.org/Person> .
+<http://schema.org/name> <http://schema.org/domainIncludes> <http://schema.org/Thing> .
+<http://schema.org/name> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the item." .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+<http://schema.org/postalCode> <http://schema.org/domainIncludes> <http://schema.org/PostalAddress> .
+<http://schema.org/postalCode> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The postal code. For example, 94043." .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "postalCode" .
+# 
+<http://schema.org/publisher> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/publisher> <http://schema.org/rangeIncludes> <http://schema.org/Organization> .
+<http://schema.org/publisher> <http://schema.org/rangeIncludes> <http://schema.org/Person> .
+<http://schema.org/publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "The publisher of the creative work." .
+<http://schema.org/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "publisher" .
+# 
+<http://schema.org/streetAddress> <http://schema.org/domainIncludes> <http://schema.org/PostalAddress> .
+<http://schema.org/streetAddress> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The street address. For example, 1600 Amphitheatre Pkwy." .
+<http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "streetAddress" .
+# 
+<http://schema.org/thumbnailUrl> <http://schema.org/domainIncludes> <http://schema.org/ImageObject> .
+<http://schema.org/thumbnailUrl> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
+<http://schema.org/thumbnailUrl> <http://www.w3.org/2000/01/rdf-schema#comment> "A thumbnail image relevant to the Thing." .
+<http://schema.org/thumbnailUrl> <http://www.w3.org/2000/01/rdf-schema#label> "thumbnailUrl" .
+# 
+<http://schema.org/url> <http://schema.org/domainIncludes> <http://schema.org/Article> .
+<http://schema.org/url> <http://schema.org/domainIncludes> <http://schema.org/ImageObject> .
+<http://schema.org/url> <http://schema.org/domainIncludes> <http://schema.org/Organization> .
+<http://schema.org/url> <http://schema.org/domainIncludes> <http://schema.org/Thing> .
+<http://schema.org/url> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of the item." .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
+# 
+<http://schema.org/width> <http://schema.org/domainIncludes> <http://schema.org/ImageObject> .
+<http://schema.org/width> <http://schema.org/rangeIncludes> <http://schema.org/QuantitativeValue> .
+<http://schema.org/width> <http://www.w3.org/2000/01/rdf-schema#comment> "The width of the item." .
+<http://schema.org/width> <http://www.w3.org/2000/01/rdf-schema#label> "width" .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

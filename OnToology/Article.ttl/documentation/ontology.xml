@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Image -->
+
+
+    <Class rdf:about="http://purl.org/dc/dcmitype/Image">
+        <equivalentClass rdf:resource="http://schema.org/ImageObject"/>
+    </Class>
+    
+
+
+    <!-- http://schema.org/Article -->
+
+
+    <Class rdf:about="http://schema.org/Article">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.&lt;/p&gt;
+
+&lt;p&gt;See also &lt;a href=&quot;http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Article</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+
+    <Class rdf:about="http://schema.org/CreativeWork"/>
+    
+
+
+    <!-- http://schema.org/Enumeration -->
+
+
+    <Class rdf:about="http://schema.org/Enumeration"/>
+    
+
+
+    <!-- http://schema.org/ImageObject -->
+
+
+    <Class rdf:about="http://schema.org/ImageObject">
+        <rdfs:subClassOf rdf:resource="http://schema.org/MediaObject"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An image file.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImageObject</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/Intangible -->
+
+
+    <Class rdf:about="http://schema.org/Intangible"/>
+    
+
+
+    <!-- http://schema.org/Language -->
+
+
+    <Class rdf:about="http://schema.org/Language">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in &lt;a href=&quot;https://en.wikipedia.org/wiki/IETF_language_tag&quot;&gt;BCP 47&lt;/a&gt; can be used via the &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/alternateName&quot;&gt;alternateName&lt;/a&gt; property. The Language type previously also covered programming languages such as Scheme and Lisp, which are now best represented using &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/ComputerLanguage&quot;&gt;ComputerLanguage&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Language</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/MediaObject -->
+
+
+    <Class rdf:about="http://schema.org/MediaObject"/>
+    
+
+
+    <!-- http://schema.org/NewsArticle -->
+
+
+    <Class rdf:about="http://schema.org/NewsArticle">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews"/>
+        <terms:source rdf:resource="https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP-draws"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news.&lt;/p&gt;
+
+&lt;p&gt;A more detailed overview of &lt;a href=&quot;/docs/news.html&quot;&gt;schema.org News markup&lt;/a&gt; is also available.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NewsArticle</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+
+    <Class rdf:about="http://schema.org/Organization">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization such as a school, NGO, corporation, club, etc.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+
+    <Class rdf:about="http://schema.org/Person">
+        <equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person (alive, dead, undead, or fictional).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+
+    <Class rdf:about="http://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entities that have a somewhat fixed, physical extension.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Place</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/PostalAddress -->
+
+
+    <Class rdf:about="http://schema.org/PostalAddress">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mailing address.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PostalAddress</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/QualitativeValue -->
+
+
+    <Class rdf:about="http://schema.org/QualitativeValue">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Enumeration"/>
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A predefined value for a product characteristic, e.g. the power cord plug type &apos;US&apos; or the garment sizes &apos;S&apos;, &apos;M&apos;, &apos;L&apos;, and &apos;XL&apos;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QualitativeValue</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/Report -->
+
+
+    <Class rdf:about="http://schema.org/Report">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Report generated by governmental or non-governmental organization.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Report</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/ScholarlyArticle -->
+
+
+    <Class rdf:about="http://schema.org/ScholarlyArticle">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A scholarly article.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ScholarlyArticle</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/SocialMediaPosting -->
+
+
+    <Class rdf:about="http://schema.org/SocialMediaPosting">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A post to a social media platform, including blog posts, tweets, Facebook posts, etc.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SocialMediaPosting</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/TechArticle -->
+
+
+    <Class rdf:about="http://schema.org/TechArticle">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technical article - Example: How-to (task) topics, step-by-step, procedural troubleshooting, specifications, etc.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechArticle</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://schema.org/Thing -->
+
+
+    <Class rdf:about="http://schema.org/Thing"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass -->
+
+
+    <NamedIndividual rdf:about="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass">
+        <rdf:type rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class is derived from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web that can be expressed in a variety of syntaxes, including RDFa and HTML5 Microdata. More information about GoodRelations can be found at &lt;a href=&quot;http://purl.org/goodrelations/&quot;&gt;http://purl.org/goodrelations/&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GoodRelationsClass</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms -->
+
+
+    <NamedIndividual rdf:about="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms">
+        <rdf:type rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term &lt;a href=&quot;http://blog.schema.org/2012/11/good-relations-and-schemaorg.html&quot;&gt;uses&lt;/a&gt; terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at &lt;a href=&quot;http://purl.org/goodrelations/&quot;&gt;http://purl.org/goodrelations/&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GoodRelationsTerms</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://schema.org/about">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The subject matter of the content.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">about</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/addressCountry">
+        <schema:domainIncludes rdf:resource="http://schema.org/PostalAddress"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Country"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The country. For example, USA. You can also provide the two-letter &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO_3166-1&quot;&gt;ISO 3166-1 alpha-2 country code&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addressCountry</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/addressLocality">
+        <schema:domainIncludes rdf:resource="http://schema.org/PostalAddress"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The locality. For example, Mountain View.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addressLocality</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/addressRegion">
+        <schema:domainIncludes rdf:resource="http://schema.org/PostalAddress"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The region. For example, CA.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addressRegion</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/articleBody">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The actual body of the article.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articleBody</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/author">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Person"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">author</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/caption">
+        <schema:domainIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The caption for this object.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caption</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/contentLocation">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The location depicted or described in the content. For example, the location in a photograph or painting.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contentLocation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/contributor">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Person"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A secondary contributor to the Article.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contributor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/datePublished">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Date"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of first broadcast/publication.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datePublished</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/description">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A description of the item.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/headline">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Headline of the article.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">headline</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/height">
+        <schema:domainIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/QuantitativeValue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The height of the item.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">height</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/image">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An image of the item. This can be a &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/URL&quot;&gt;URL&lt;/a&gt; or a fully described &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/ImageObject&quot;&gt;ImageObject&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/inLanguage">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Language"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The language of the content or performance or used in an action. Please use one of the language codes from the &lt;a href=&quot;http://tools.ietf.org/html/bcp47&quot;&gt;IETF BCP 47 standard&lt;/a&gt;. See also &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/availableLanguage&quot;&gt;availableLanguage&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inLanguage</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/name">
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Person"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The name of the item.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/postalCode">
+        <schema:domainIncludes rdf:resource="http://schema.org/PostalAddress"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The postal code. For example, 94043.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postalCode</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/publisher">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Person"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The publisher of the creative work.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publisher</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/streetAddress">
+        <schema:domainIncludes rdf:resource="http://schema.org/PostalAddress"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The street address. For example, 1600 Amphitheatre Pkwy.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">streetAddress</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/thumbnailUrl">
+        <schema:domainIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thumbnail image relevant to the Thing.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thumbnailUrl</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/url">
+        <schema:domainIncludes rdf:resource="http://schema.org/Article"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL of the item.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/width">
+        <schema:domainIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/QuantitativeValue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The width of the item.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">width</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
